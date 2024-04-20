@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "CPA-COMPONENTS"
 include(":app")
- 
+include(":cpa_textfield")

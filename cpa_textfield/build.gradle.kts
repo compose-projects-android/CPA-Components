@@ -1,19 +1,19 @@
 @Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
-    alias(libs.plugins.androidApplication)
+    alias(libs.plugins.androidLibrary)
     alias(libs.plugins.kotlinAndroid)
 }
 
 android {
-    namespace = "org.compose_projects.cpa_components"
+    namespace = "org.compose_projects.cpa_textfield"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "org.compose_projects.cpa_components"
+        //applicationId = "org.compose_projects.cpa_textfield"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        //versionCode = 1
+        //versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -51,8 +51,6 @@ android {
 }
 
 dependencies {
-
-    implementation(project(":cpa_textfield"))
 
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
