@@ -16,6 +16,16 @@ import org.compose_projects.cpa_textfield.ui.theme.cpa_theme_default_selectedFie
 import org.compose_projects.cpa_textfield.ui.theme.cpa_theme_default_textSelection_background
 import org.compose_projects.cpa_textfield.config.CPAColors
 import org.compose_projects.cpa_textfield.ui.theme.cpa_theme_default_textColor
+import org.compose_projects.cpa_textfield.ui.theme.cpa_theme_green_containerFocused
+import org.compose_projects.cpa_textfield.ui.theme.cpa_theme_green_containerUnFocused
+import org.compose_projects.cpa_textfield.ui.theme.cpa_theme_green_cursorColor
+import org.compose_projects.cpa_textfield.ui.theme.cpa_theme_green_selectedFieldBorder
+import org.compose_projects.cpa_textfield.ui.theme.cpa_theme_green_textColor
+import org.compose_projects.cpa_textfield.ui.theme.cpa_theme_green_textSelection_background
+import org.compose_projects.cpa_textfield.ui.theme.cpa_theme_green_textSelection_handleColor
+import org.compose_projects.cpa_textfield.ui.theme.cpa_theme_green_unSelectedFieldBorder
+import org.compose_projects.cpa_textfield.ui.theme.cpa_theme_green_textFocused
+import org.compose_projects.cpa_textfield.ui.theme.cpa_theme_green_textUnFocused
 import org.compose_projects.cpa_textfield.ui.theme.cpa_theme_red_containerFocused
 import org.compose_projects.cpa_textfield.ui.theme.cpa_theme_red_containerUnFocused
 import org.compose_projects.cpa_textfield.ui.theme.cpa_theme_red_cursorColor
@@ -103,6 +113,28 @@ object CPATextFieldColors {
             override val textStyle: TextStyle = TextStyle(
                 fontSize = 15.sp,
                 color = cpa_theme_yellow_textColor
+            )
+        }
+
+    val greenStyle: CPAColors
+        get() = object :
+            CPAColors {
+            override val imeAction: ImeAction = ImeAction.Done
+            override val textFocused: Color = cpa_theme_green_textFocused
+            override val textUnFocused: Color = cpa_theme_green_textUnFocused
+            override val containerFocused: Color = cpa_theme_green_containerFocused
+            override val containerUnFocused: Color = cpa_theme_green_containerUnFocused
+            override val cursorColor: Color = cpa_theme_green_cursorColor
+            override val colorSelectText: TextSelectionColors =
+                TextSelectionColors(
+                    handleColor = cpa_theme_green_textSelection_handleColor,
+                    backgroundColor = cpa_theme_green_textSelection_background
+                )
+            override val selectedFieldBorder: Color = cpa_theme_green_selectedFieldBorder
+            override val unSelectedFieldBorder: Color = cpa_theme_green_unSelectedFieldBorder
+            override val textStyle: TextStyle = TextStyle(
+                fontSize = 15.sp,
+                color = cpa_theme_green_textColor
             )
         }
 

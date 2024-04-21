@@ -57,6 +57,14 @@ class MainActivity : ComponentActivity() {
                                 onValueChange = { text = it }
                             )
 
+                            Spacer(modifier = Modifier.height(10.dp))
+
+                            CPATextField(
+                                colors = CPATextFieldColors.greenStyle,
+                                value = text,
+                                onValueChange = { text = it }
+                            )
+
                         }
                     }
                 }
