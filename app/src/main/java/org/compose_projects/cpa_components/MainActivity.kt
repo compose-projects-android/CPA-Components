@@ -5,9 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.height
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.getValue
@@ -16,10 +14,10 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
 import org.compose_projects.cpa_components.ui.theme.CPACOMPONENTSTheme
-import org.compose_projects.cpa_textfield.CPATextField
-import org.compose_projects.cpa_textfield.styles.CPATextFieldColors
+
+//import org.compose_projects.cpa_textfield.CPATextField
+//import org.compose_projects.cpa_textfield.styles.CPATextFieldColors
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,7 +33,7 @@ class MainActivity : ComponentActivity() {
                     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
 
                         Column {
-
+                            /*
                             CPATextField(
                                 value = text,
                                 onValueChange = { text = it }
@@ -64,6 +62,8 @@ class MainActivity : ComponentActivity() {
                                 value = text,
                                 onValueChange = { text = it }
                             )
+
+                             */
 
                         }
                     }
