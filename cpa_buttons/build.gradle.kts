@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.kotlinAndroid)
+    id("maven-publish")
 }
 
 android {
@@ -41,4 +42,17 @@ android {
 dependencies {
     implementation(platform(libs.compose.bom))
     implementation(libs.material3)
+}
+
+publishing{
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.compose-projects-android"
+            artifactId = "CPA-Components"
+            version = "1.0"
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
 }
