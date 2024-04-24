@@ -15,13 +15,13 @@ import androidx.compose.ui.text.input.VisualTransformation
 import org.compose_projects.components.cpa_textfield.config.CPAColors
 import org.compose_projects.components.cpa_textfield.config.CPASizes
 import org.compose_projects.components.cpa_textfield.styles.CPATextFieldColors
-import org.compose_projects.components.cpa_textfield.styles.SPATextFieldSizes
+import org.compose_projects.components.cpa_textfield.styles.CPATextFieldSizes
 
 @OptIn(ExperimentalComposeUiApi::class)
 @Composable
 fun CPATextField(
     colors: CPAColors = CPATextFieldColors.defaultStyle,
-    sizes: CPASizes = SPATextFieldSizes.defaultSize,
+    sizes: CPASizes = CPATextFieldSizes.defaultSize,
     value: String,
     showText: Boolean = true,
     trailingIcon: @Composable (() -> Unit)? = null,

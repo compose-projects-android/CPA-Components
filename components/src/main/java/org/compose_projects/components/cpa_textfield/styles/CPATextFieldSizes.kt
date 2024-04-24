@@ -5,7 +5,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import org.compose_projects.components.cpa_textfield.config.CPASizes
 
-object SPATextFieldSizes {
+object CPATextFieldSizes {
 
     val defaultSize: CPASizes
         get() = object : CPASizes {
@@ -29,7 +29,7 @@ object SPATextFieldSizes {
             override val height: Dp = 55.dp
             override val width: Dp = 300.dp
             override val shape: RoundedCornerShape = RoundedCornerShape(20.dp)
-            override val maxLines: Int = 5000
+            override val maxLines: Int = 300
             override val maxChar: Int = 10000
 
         }
