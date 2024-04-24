@@ -51,12 +51,9 @@ android {
 }
 
 dependencies {
-    //implementation ("com.github.wlprojt:dimage:1.0")
-    //implementation(project(":cpa_textfield"))
-    //implementation("me.zhanghai.compose.preference:library:1.0.0")
-    //implementation("com.github.compose-projects-android:CPA-Components:1.0")
-    implementation(project(":cpa_buttons"))
-    //implementation("com.github.compose-projects-android:CPA-Components:1.0.0")
+
+    implementation("com.github.compose-projects-android:CPA-Components:1.0.1")
+
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
     implementation(libs.activity.compose)
