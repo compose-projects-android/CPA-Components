@@ -19,5 +19,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "CPA-COMPONENTS"
 include(":app")
-include(":cpa_buttons")
-include(":cpa_textfield")
