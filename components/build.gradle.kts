@@ -48,7 +48,7 @@ publishing{
         register<MavenPublication>("release") {
             groupId = "com.github.compose-projects-android"
             artifactId = "CPA-Components"
-            version = "1.0.0-alpha"
+            version = "1.0.2-alpha"
             afterEvaluate {
                 from(components["release"])
             }
