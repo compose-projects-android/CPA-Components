@@ -23,7 +23,7 @@ dependencyResolutionManagement {
 ```
 2. Use la dependencia en su gradle a nivel de app, o donde necesite la dependencia:
 ```
-implementation("com.github.compose-projects-android:CPA-Components:1.0.0-alpha")
+implementation("com.github.compose-projects-android:CPA-Components:1.0.1-alpha")
 ```
 
 3. Llame a nuestros componentes CPA:
