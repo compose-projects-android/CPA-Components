@@ -1,6 +1,5 @@
 package org.compose_projects.cpa_components
 
-import ButtonComponent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -32,12 +31,8 @@ class MainActivity : ComponentActivity() {
                     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
 
                         Column {
-                            CPATextField(value = text, onValueChange = {text = it} )
-                            ButtonComponent(text = text) {
-
-                            }
+                            CPATextField(value = text, onValueChange = { text = it })
                         }
-
                     }
                 }
             }

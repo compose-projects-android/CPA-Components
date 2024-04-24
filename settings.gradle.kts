@@ -19,3 +19,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "CPA-COMPONENTS"
 include(":app")
+include(":components")
