@@ -52,7 +52,8 @@ android {
 
 dependencies {
 
-    implementation(project(":components"))
+    implementation("com.github.compose-projects-android:CPA-Components:1.0.0-alpha")
+    //implementation(project(":components"))
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
     implementation(libs.activity.compose)
