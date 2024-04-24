@@ -1,5 +1,6 @@
 package org.compose_projects.cpa_components
 
+import ButtonComponent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -8,14 +9,13 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import org.compose_projects.components.cpa_textfield.CPATextField
 import org.compose_projects.cpa_components.ui.theme.CPACOMPONENTSTheme
 
 class MainActivity : ComponentActivity() {
@@ -32,7 +32,10 @@ class MainActivity : ComponentActivity() {
                     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
 
                         Column {
+                            CPATextField(value = text, onValueChange = {text = it} )
+                            ButtonComponent(text = text) {
 
+                            }
                         }
 
                     }
